@@ -18,6 +18,7 @@ body {
 
 #title {
     font-size: 3rem;
+    color: cadetblue;
 }
 
 #alarm {
@@ -38,6 +39,7 @@ body {
 #timer {
     font-size: 2rem;
     font-weight: 600;
+    color: grey;
 }
 
 #topContainer {
@@ -50,6 +52,7 @@ input {
     border: none;
     width: 70px;
     font-size: 1.5rem;
+    color: grey;
 }
 
 input:focus {
@@ -58,10 +61,6 @@ input:focus {
 
 #minutes {
     margin-right: 8px;
-}
-
-#seconds {
-
 }
 
 button {
@@ -87,10 +86,6 @@ button {
     background-color: cadetblue;
     color: white;
     opacity: 0.6;
-}
-
-.faded {
-
 }
 
 #bottomContainer {

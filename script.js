@@ -31,7 +31,9 @@ function startTimer() {
     timer = setInterval(() => {
       time--;
       localStorage.setItem("time", time);
-      timerEl.textContent = `Time Left: ${time}`;
+      const remainingMinutes = Math.floor(time / 60) || 0;
+      const remainingSeconds = time % 60 || 0;
+      timerEl.textContent = `Time Left: ${remainingMinutes}:${remainingSeconds}`;
       // startBtn.style.color = 'white';
       // startBtn.style.backgroundColor = 'cadetblue';
       // startBtn.style.opacity = 0.6;
