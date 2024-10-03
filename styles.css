@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    width: 100svw;
+}
+
+#alarm {
+    display: none;
+}
+
+#container  {
+    width: 50svw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:inset 0 0 25px cadetblue;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#timer {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#topContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    width: 70px;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+#minutes {
+
+}
+
+#seconds {
+
+}
+
+button {
+    cursor: pointer;
+    width: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid cadetblue;
+}
+
+#middleContainer {
+    margin: 2.5rem auto 2.5rem auto;
+}
+
+#startBtn, #resetBtn, #btn1:hover, #btn2:hover, #btn3:hover {
+    background-color: white;
+    color: cadetblue;
+    transition: 0.3s;
+}
+
+#startBtn:hover, #resetBtn:hover {
+    
+}
+
+#bottomContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn1, #btn2, #btn3, #startBtn:hover, #resetBtn:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+#btn2 {
+    margin: 0.5rem auto;
+}
+
+#btn3 {
+
+}

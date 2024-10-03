@@ -10,10 +10,22 @@
 </head>
 <body>
     <audio src="./assets//alarm-clock-90867.mp3" id="alarm"></audio>
-    <p id="timer"></p>
-    <input type="number" placeholder="Minutes" id="minutes">
-    <input type="number" placeholder="Seconds" id="seconds">
-    <button id="startBtn">Start Timer</button>
+    <div id="container">
+        <p id="timer"></p>
+        <div id="topContainer">
+        <input type="number" min="0" placeholder="min" id="minutes">
+        <input type="number" min="0" max="60" placeholder="sec" id="seconds">
+        </div>
+        <div id="middleContainer">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+        </div>
+        <div id="bottomContainer">
+            <button id="btn1">01 : 00</button>
+            <button id="btn2">00 : 30</button>
+            <button id="btn3">05 : 00</button>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
