@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: Verdana;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: center;
+    flex-direction: column;
     height: 100svh;
     width: 100svw;
+}
+
+#title {
+    font-size: 3rem;
 }
 
 #alarm {
@@ -17,17 +26,17 @@ body {
 
 #container  {
     width: 50svw;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow:inset 0 0 25px cadetblue;
+    /* box-shadow:inset 0 0 25px cadetblue; */
+    background-color: whitesmoke;
     border-radius: 2rem;
     padding: 2rem;
 }
 
 #timer {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -48,7 +57,7 @@ input:focus {
 }
 
 #minutes {
-
+    margin-right: 8px;
 }
 
 #seconds {
@@ -68,14 +77,20 @@ button {
     margin: 2.5rem auto 2.5rem auto;
 }
 
-#startBtn, #resetBtn, #btn1:hover, #btn2:hover, #btn3:hover {
+.startBtn, .resetBtn, #btn1:hover, #btn2:hover, #btn3:hover {
     background-color: white;
     color: cadetblue;
     transition: 0.3s;
 }
 
-#startBtn:hover, #resetBtn:hover {
-    
+.faded {
+    background-color: cadetblue;
+    color: white;
+    opacity: 0.6;
+}
+
+.faded {
+
 }
 
 #bottomContainer {
@@ -85,7 +100,7 @@ button {
     justify-content: center;
 }
 
-#btn1, #btn2, #btn3, #startBtn:hover, #resetBtn:hover {
+#btn1, #btn2, #btn3, .startBtn:hover, .resetBtn:hover {
     background-color: cadetblue;
     color: white;
 }
