@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Web Timer</title>
+  </head>
+  <body>
     <audio src="./assets//alarm-clock-90867.mp3" id="alarm"></audio>
     <h1 id="title">Web Timer</h1>
     <div id="container">
-        <p id="timer">Start Timer</p>
-        <div id="topContainer">
-        <input type="number" min="0" placeholder="min" id="minutes">
-        <input type="number" min="0" max="60" placeholder="sec" id="seconds">
-        </div>
-        <div id="middleContainer">
+      <p id="timer">Start Timer</p>
+      <div id="topContainer">
+        <input type="number" min="0" placeholder="min" id="minutes" />
+        <input type="number" min="0" max="60" placeholder="sec" id="seconds" />
+      </div>
+      <div id="middleContainer">
         <button class="startBtn">Start</button>
         <button class="resetBtn">Reset</button>
-        </div>
-        <div id="bottomContainer">
-            <button id="btn1">01 : 00</button>
-            <button id="btn2">00 : 30</button>
-            <button id="btn3">05 : 00</button>
-        </div>
+      </div>
+      <div id="bottomContainer">
+        <button id="btn1">01 : 00</button>
+        <button id="btn2">00 : 30</button>
+        <button id="btn3">05 : 00</button>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
