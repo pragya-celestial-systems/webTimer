@@ -19,7 +19,6 @@ let countdownTimer;
 
 function startTimer() {
   let remainingTime = localStorage.getItem("time");
-  console.log();
 
   if (remainingTime > 0) {
     minutesInput.disabled = true;
@@ -69,6 +68,9 @@ function calculateTotalTime() {
 
 presetButtons.forEach((button) => {
   button.addEventListener("click", () => {
+    // pause the previous alarm's sound
+    alarmSound.pause();
+
     const [minutesStr, secondsStr] = button.textContent.split(":");
     minutes = parseInt(minutesStr.trim());
     seconds = parseInt(secondsStr.trim());
